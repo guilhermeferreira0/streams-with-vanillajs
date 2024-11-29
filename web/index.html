@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Streams web</title>
+        <style>
+            main {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to Strems with vanilajs</h1>
+
+        <main>
+            
+            <div>
+                <label for="selectService">Select Service</label>
+                <select id="selectService">
+                    <option value="server">Server</option>
+                    <option value="web">Web</option>
+                </select>
+            </div>
+            
+            <div id="divInputFile" style="display: none;">
+                <label for="inputFile">Insert your file</label>
+                <input type="file" id="inputFile" >
+            </div>
+
+            <div style="display: none;">
+                <label for="inputWorker">Use Worker ?</label>
+                <input type="checkbox" id="inputWorker" name="input">
+            </div>
+
+            <div style="display: none;">
+                <label for="inputStream">Use Stream ?</label>
+                <input type="checkbox" id="inputStream" name="input">
+            </div>
+            
+            <div>
+                <button id="startButton">Start</button>
+                <button id="stopButton">Stop</button>
+            </div>
+
+            <div id="preview">
+
+                <video src="" id="previewVideo" width="600" controls style="display: none;"></video>
+                <canvas id="canvas" width="600" height="400" style="display: none;"></canvas>
+            </div>
+        </main>
+
+        <script src="./main.js" type="module"></script>
+    </body>
+</html>
